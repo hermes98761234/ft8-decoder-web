@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FT8 Decoder: decode FT8 amateur radio signals in your browser</title>
+    <meta name="description" content="Free FT8 decoder for amateur radio that runs in your browser: microphone waterfall, 15 s UTC slot sync, decoded message list, grid square map and a built-in FT8 encoder. A TypeScript port of ft8_lib; audio never leaves your device." />
+    <meta name="keywords" content="FT8 decoder, FT8 online, amateur radio, ham radio, WSJT-X, ft8_lib, waterfall, Maidenhead grid, FT8 encoder, weak signal" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/ft8-decoder-web/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="FT8" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FT8 Decoder" />
+    <meta property="og:url" content="https://hermes98761234.github.io/ft8-decoder-web/" />
+    <meta property="og:title" content="FT8 Decoder in your browser" />
+    <meta property="og:description" content="Decode FT8 from your microphone: waterfall, UTC slots, messages, grid square map and an encoder. Nothing is uploaded." />
+    <meta property="og:image" content="https://hermes98761234.github.io/ft8-decoder-web/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="FT8 Decoder: decode FT8 in your browser" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FT8 Decoder in your browser" />
+    <meta name="twitter:description" content="Decode FT8 from your microphone, with waterfall, map and encoder. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/ft8-decoder-web/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FT8 Decoder",
+        "url": "https://hermes98761234.github.io/ft8-decoder-web/",
+        "description": "Decodes and encodes FT8 amateur radio signals in the browser, with waterfall, UTC slot sync, message list and Maidenhead grid square map.",
+        "applicationCategory": "CommunicationApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript, Web Workers and Web Audio",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This decoder needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

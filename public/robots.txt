@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hermes98761234.github.io/ft8-decoder-web/sitemap.xml
